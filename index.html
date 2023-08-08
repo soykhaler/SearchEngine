@@ -163,6 +163,14 @@
         var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);
         window.open(url, '_blank');
     });
+$('.search-input').keypress(function(event) {
+    if (event.which == 13) {
+        var query = $('.search-input').val();
+        var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+        window.open(url, '_blank');
+    }
+});
+	  
   </script>
 </body>
 </html>
